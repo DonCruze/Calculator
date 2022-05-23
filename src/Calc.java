@@ -47,9 +47,6 @@ public class Calc {
         if(Integer.parseInt(strList.get(0)) < 1 || Integer.parseInt(strList.get(0)) > 10 || Integer.parseInt(strList.get(2)) < 1 || Integer.parseInt(strList.get(2)) > 10 ){
             throw new Exception();
         }
-        if(Integer.parseInt(strList.get(2)) < 1 || Integer.parseInt(strList.get(2)) > 10){
-            throw new Exception();
-        }
 
 
         if(strList.get(1).equals("+")) {
@@ -58,7 +55,7 @@ public class Calc {
         }
         if(strList.get(1).equals("-")) {
             a = Integer.parseInt(strList.get(0)) - Integer.parseInt(strList.get(2));
-            ;
+
         }
         if(strList.get(1).equals("/")) {
             a = Integer.parseInt(strList.get(0)) / Integer.parseInt(strList.get(2));
